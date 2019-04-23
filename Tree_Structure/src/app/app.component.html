@@ -1,6 +1,6 @@
 <div style="text-align:center">
   <h3>Select Multiple Nodes with Checkbox</h3>
-<p-tree [value]="filesTree" selectionMode="checkbox" [(selection)]="selectedFile"></p-tree>
+<p-tree [value]="filesTree" selectionMode="checkbox" [(selection)]="selectedFile" [propagateSelectionUp]="false" [propagateSelectionDown]="false"></p-tree>
 <div>Selected Nodes: <span *ngFor="let file of selectedFile">{{file.label}} </span></div>
 </div>
 <router-outlet></router-outlet>
